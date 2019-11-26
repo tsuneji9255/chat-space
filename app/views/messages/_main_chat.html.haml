@@ -1,37 +1,37 @@
 .chat
-    .header
-        .left-header
-            .left-header__title
-            テスト２
-            %ul.left-header__members
-                Member：
-                %li.member
-                tsuneji
-        .right-header
-            %a.right-header__button Edit
+  .header
+    .left-header
+      .left-header__title
+        テスト２
+        %ul.left-header__members
+          Member：
+          %li.member
+          tsuneji
+    .right-header
+      %a.right-header__button Edit
 
-    .messages
-        .message
-            .message__upper-info
-                %p.message__talker tsuneji
-                %p.message__date 2019/11/20(Wed) 20:13:40
+  .messages
+    .message
+      .message__upper-info
+        %p.message__talker tsuneji
+        %p.message__date 2019/11/20(Wed) 20:13:40
 
-            .lower-message
-                %p.message__text テスト
+      .lower-message
+        %p.message__text テスト
       
-        .message
-            .message__upper-info
-                %p.message__talker saito
-                %p.message__date 2019/11/20(Wed) 20:13:45
+    .message
+      .message__upper-info
+        %p.message__talker saito
+        %p.message__date 2019/11/20(Wed) 20:13:45
 
-            .lower-message
-                %p.message__text テスト２
+      .lower-message
+        %p.message__text テスト２
 
 
-    .form
-        %input#message_content.form__message{:name => "message[content]", :placeholder => "type a message", :type => "text"}/
-        .form__mask
-            %label.form__mask__image{:for => "message_image"}
-                %i.fa.fa-image.icon
-                %input#message_image.hidden{:name => "message[image]", :type => "file"}/
-        %input.form__submit{:name => "commit", :type => "submit", :value => "Send"}/
+  .form
+    %input#message_content.form__message{name: "message[content]", placeholder: "type a message", type: "text"}/
+    .form__mask
+      %label.form__mask__image{for: "message_image"}
+        %i.fa.fa-image.icon
+        %input#message_image.hidden{name: "message[image]", type:  "file"}/
+    %input.form__submit{name: "commit", type: "submit", value: "Send"}/
