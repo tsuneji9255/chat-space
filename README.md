@@ -24,7 +24,7 @@
 - has_many :messages
 
 
-## membersテーブル
+## group_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id |references :user |foreign_key: true|
