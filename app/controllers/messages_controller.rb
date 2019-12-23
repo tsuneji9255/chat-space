@@ -31,3 +31,5 @@ class MessagesController < ApplicationController
   end
   
 end
+
+#プルリクエストするためにメッセージを追記
