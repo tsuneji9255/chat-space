@@ -11,15 +11,14 @@
     .right-header
       = link_to "Edit", edit_group_path(@group), class:"main-header__right-box__button"
 
-
   .messages
     = render @messages
 
   .form
-    = form_for [@group, @message], {class: 'new_message'} do |f|
+    = form_for [@group, @message] do |f|
       = f.text_field :content, class: 'form__message', placeholder: 'type a message'
       .form__mask
-      = f.label :image, class: 'form__mask__image' do
-        = fa_icon 'picture-o', class: 'icon'
-        = f.file_field :image, class: 'hidden'
-      = f.submit value:'Send', class: 'form__submit', "data-disable-with": false
+        = f.label :message_image, class: 'form__mask__image' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'
