@@ -6,9 +6,10 @@ $(function(){
                     <div class="message__talker">${message.user_name}</div>
                     <div class="message__date">${message.date}</div>
                   </div>
-                  <div class="lower-message__content">${message.content}</p>
+                  <div class="lower-message__content">${message.content}
                     <p class="lower-message__image">
                     ${img}
+                    </p>
                   </div>
                 </div>`
     return html;
